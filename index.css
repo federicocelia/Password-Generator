@@ -1,0 +1,131 @@
+/* ====== GLOBAL ELEMENTS ====== */
+
+body {
+  background-color: #17202c;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: #10b981;
+  color: white;
+}
+
+fieldset {
+  border-color: #4adf86;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
+footer {
+  bottom: 0;
+  color: #d5d4d8;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: #4adf86;
+}
+
+hr {
+  background-color: #28384f;
+  border: none;
+  height: 2px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+input {
+  background-color: #28384f;
+  color: #4adf86;
+}
+
+input[type="radio"] {
+  appearance: none;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1rem;
+  outline: none;
+  width: 1rem;
+}
+
+input[type="radio"]:checked {
+  background-color: #4adf86;
+}
+
+/* ====== CLASS SELECTORS ====== */
+
+.coloured,
+.generated {
+  color: #4adf86;
+}
+
+.copied {
+  background-color: #28384f;
+}
+
+.generated {
+  background-color: #28384f;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.generated-passwords {
+  align-items: flex-start;
+  column-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-section {
+  align-content: center;
+  align-items: center;
+  color: #d5d4d8;
+  display: flex;
+  flex-direction: column;
+  font-family: "karla";
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+/* ====== ID SELECTORS ====== */
+
+#form-intro {
+  margin-bottom: 2rem;
+}
+
+#pass-length {
+  border: none;
+  border-radius: 3px;
+  padding: 2px 0 2px 5px;
+}
+
+#start-btn {
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 800;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  text-shadow: 0 0 3px black;
+}
+
+#title {
+  color: white;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}

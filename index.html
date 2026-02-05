@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="main-section">
+        <div>
+          <h1 id="title">
+          Generate a <br /><span class="coloured">random password</span>
+        </h1>
+        <p id="form-intro">Never use an insecure password again.</p>
+
+        <form id="password-generator-form" aria-describedby="form-intro">
+          <div>
+            <p id="pass-length-hint">
+              Choose a length between 4 and 15 characters.
+            </p>
+            <label for="pass-length">Password Length:</label>
+            <input
+              type="number"
+              id="pass-length"
+              name="pass-length"
+              min="4"
+              max="15"
+              step="1"
+              value="15"
+              inputmode="numeric"
+              required
+              aria-describedby="pass-length-hint"
+            />
+          </div>
+
+          <fieldset>
+            <legend>Include numbers?</legend>
+
+            <input
+              type="radio"
+              name="number"
+              id="number-yes"
+              value="yes"
+              checked
+            />
+            <label for="number-yes">Yes</label>
+
+            <input type="radio" name="number" id="number-no" value="no" />
+            <label for="number-no">No</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Include symbols?</legend>
+
+            <input
+              type="radio"
+              name="symbol"
+              id="symbol-yes"
+              value="yes"
+              checked
+            />
+            <label for="symbol-yes">Yes</label>
+
+            <input type="radio" name="symbol" id="symbol-no" value="no" />
+            <label for="symbol-no">No</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Only numeric Password ?</legend>
+
+            <input type="radio" name="numeric" id="numeric-yes" value="yes" />
+            <label for="numeric-yes">Yes</label>
+
+            <input
+              type="radio"
+              name="numeric"
+              id="numeric-no"
+              value="no"
+              checked
+            />
+            <label for="numeric-no">No</label>
+          </fieldset>
+
+          <div>
+            <button id="start-btn" type="button">Generate password</button>
+          </div>
+          <hr>
+        </div>
+        
+
+        </form>
+        <section class="generated-passwords">
+          <p id="password-1" class="generated"></p>
+          <p id="password-2" class="generated"></p>
+        </section>
+        
+        <!-- Live status region for screen readers -->
+        <p id="status" class="sr-only" role="status" aria-live="polite"></p>
+
+      </section>
+    </main>
+    <footer>
+      Created By
+      <a
+        href="https://www.linkedin.com/in/federico-celia-13b3851a8/"
+        target="_blank"
+        >Federico Celia</a
+      >
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
