@@ -67,7 +67,7 @@ script.js     → Password generation and accessibility logic
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/password-generator.git
+git clone https://github.com/federicocelia/password-generator.git
 cd password-generator
 ```
 
