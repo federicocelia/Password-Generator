@@ -2,6 +2,14 @@
 
 A simple, accessible password generator built with **HTML**, **CSS**, and **JavaScript**, including ARIA live-region support for screen readers.
 
+## 📸 Preview
+
+![Password Generator Screenshot](./Screenshot.png)
+
+```
+./Screenshot.png
+```
+
 ## ⭐ Features
 
 - Generate two secure passwords at once
